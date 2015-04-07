@@ -1,0 +1,162 @@
+.main {
+	background:#FFF;
+}
+
+.color1 {
+	background:#1D6C35;
+	border-color:#1D6C35;
+	border-style: solid;	
+	color:#fff;
+}
+
+.color2 {
+	/*background:#6FC074;*/
+	background: #84CE93;
+	border-color:#1D6C35;
+	border-style: solid;
+	color:#fff;
+
+
+}
+
+.color3 {
+	color:#16681F;
+}
+
+.color4 {
+	color:#56CE5E;
+}
+
+aside {
+	background:#c0392b;
+	color:#fff;
+}
+
+footer {
+	background:#000;
+	color:#fff;
+	text-align:center; 
+}
+
+/* .glyphicon-asterisk{
+	color:#f2f2f2;
+} */
+
+body {
+	padding-top:70px; 
+}
+
+.navbar.navbar-default {
+	background:#303082;
+} 
+
+.navbar.navbar-default .barra a{
+	color:#FFFFFF;
+} 
+
+li .dropdown-menu{
+	background:#303082;
+	border: none;
+}
+
+li .dropdown-menu li a{
+	color:#FFFFFF;
+}
+
+.barra:hover{
+	background:#FFFFFF;
+}
+
+.dropdown:hover{
+	background:#FFFFFF;
+	color: #303082;
+}
+
+li .dropdown-menu li a:hover{
+	background: #FFFFFF;
+	color:#303082;
+}
+
+.navbar.navbar-default .barra a:hover{
+	color:#303082;
+}
+
+body h1 {
+	color:#1A791D;
+}
+
+body h4 a{
+	color: #F2580B;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: none;
+}
+
+body article{
+	color:#30469D;
+	font-family:"Comic Sans MS";
+	font-size: 15px; 
+}
+
+.nav.nav-tabs li a{
+	background:#303082;
+	color:#FFFFFF;
+}
+
+.nav.nav-tabs .active a{
+	background:#FFFFFF;
+	color:#000;
+}
+
+.nav.nav-tabs li a:hover{
+	background:#FFFFFF;
+	color:#303082;
+}
+
+body h3 {
+	color: #0F8430;
+	font-weight: bold;
+}
+
+body h4{
+	font-size: 20px;
+	font-weight:bold;
+	/*color: #c3c3c3;*/
+	color: #fff;
+}
+
+body h6 {
+	font-size: 20px;
+	font-weight:bold;
+	color: #000;
+	/*color: #1D6C35;*/
+}
+
+.iframe-rwd  {
+position: relative;
+padding-bottom: 65.25%;
+padding-top: 60px;
+height: 0;
+overflow: hidden;
+}
+.iframe-rwd iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.item input {
+	font-size: 15px;
+	color: #FFF;
+	background: #5665BA;
+}
+
+
+ol.carousel-indicators li {
+  background-color: #79B8E9;
+}
+ol.carousel-indicators .active {
+  background-color: #242F91;
+}
