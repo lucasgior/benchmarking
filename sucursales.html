@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sucursales</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  </head>
+
+
+<header>
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-1">
+          <ul class="nav navbar-nav">
+            <li class="barra"><a href="index.html">Inicio</a></li>
+            <li class="barra"><a href="privados.html">Bancos Privados</a></li>
+            <li class="barra"><a href="publicos.html">Bancos Públicos</a></li>
+            
+            <li class="dropdown barra"> 
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                 Por Banco <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="galicia.html">Galicia</a></li>
+                <li><a href="bbva.html">BBVA</a></li>
+                <li><a href="santander.html">Santander</a></li>
+                <li><a href="macro.html">Macro</a></li>
+                <li><a href="icbc.html">ICBC</a></li>
+                <li><a href="hsbc.html">HSBC</a></li>
+                <li><a href="credicoop.html">Credicoop</a></li>
+                <li><a href="patagonia.html">Patagonia</a></li>
+                <li><a href="citibank.html">Citibank</a></li>
+                <li><a href="itau.html">Itaú</a></li>
+                <li class="divider"></li>
+                <li><a href="ciudad.html">Ciudad</a></li>
+                <li><a href="provincia.html">Provincia</a></li>
+                <li><a href="nacion.html">Nación</a></li>
+                <li><a href="hipotecario.html">Hipotecario</a></li> 
+              </ul>
+            </li>
+            <li class="barra"><a href="sucursales.html">Sucursales</a></li>
+            <li class="barra"><a href="cluster.html">Clustering</a></li>            
+          </ul>       
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<body>
+  
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 col-md-12 main">
+        
+        <h1 class="page-header">Sucursales</h1>
+        <p class="text-justify">A continuación se muestran las sucursales que poseen en la Ciudad Autónoma de Buenos Aires los principales Bancos Públicos y Privados argentinos.</p><br>
+
+        <p><strong>Podrá utilizar los siguientes botones:</strong></p>
+        <p><img src="imagenes/boton.jpg" alt=""> <em>Seleccionar los Bancos que desea visualizar.</em></p>        
+        <p><img src="imagenes/boton2.jpg" alt=""> <em>Ver el mapa en pantalla completa en una pestaña nueva.</em></p>        
+
+        <br>
+
+        <div class="panel-group " id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                  Bancos Públicos
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <div class="iframe-rwd">                
+                  <iframe src="https://www.google.com/maps/d/embed?mid=z2A3bOOEO2DI.kBKQFy13SOT0" width="640" height="480"></iframe>           
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-group " id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                  Bancos Privados
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <div class="iframe-rwd">
+                 <iframe src="https://www.google.com/maps/d/embed?mid=z2A3bOOEO2DI.kO6XvjFmlCHc" width="650" height="500"></iframe>
+                </div>        
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+    
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/highcharts-more.js"></script>
+  <script src="http://code.highcharts.com/modules/exporting.js"></script> 
+  
+  <script class="text/javascript" src="js/galicia/financiaciones1.js"></script>
+  <script class="text/javascript" src="js/galicia/financiaciones2.js"></script>
+  <script class="text/javascript" src="js/galicia/carterairregular1.js"></script>
+  <script class="text/javascript" src="js/galicia/carterairregular2.js"></script>
+  <script class="text/javascript" src="js/galicia/previsionesycargo.js"></script>
+  <script class="text/javascript" src="js/galicia/calidad.js"></script>
+  <script class="text/javascript" src="js/galicia/cobertura.js"></script>
+  <script class="text/javascript" src="js/galicia/coberturaneta.js"></script>
+
+
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
