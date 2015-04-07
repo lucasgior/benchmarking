@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bancos Privados</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/ratios.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  </head>
+
+
+<header>
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-1">
+          <ul class="nav navbar-nav">
+            <li class="barra"><a href="index.html">Inicio</a></li>
+            <li class="barra"><a href="privados.html">Bancos Privados</a></li>
+            <li class="barra"><a href="publicos.html">Bancos Públicos</a></li>
+            
+            <li class="dropdown barra"> 
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                 Por Banco <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="galicia.html">Galicia</a></li>
+                <li><a href="bbva.html">BBVA</a></li>
+                <li><a href="santander.html">Santander</a></li>
+                <li><a href="macro.html">Macro</a></li>
+                <li><a href="icbc.html">ICBC</a></li>
+                <li><a href="hsbc.html">HSBC</a></li>
+                <li><a href="credicoop.html">Credicoop</a></li>
+                <li><a href="patagonia.html">Patagonia</a></li>
+                <li><a href="citibank.html">Citibank</a></li>
+                <li><a href="itau.html">Itaú</a></li>
+                <li class="divider"></li>
+                <li><a href="ciudad.html">Ciudad</a></li>
+                <li><a href="provincia.html">Provincia</a></li>
+                <li><a href="nacion.html">Nación</a></li>
+                <li><a href="hipotecario.html">Hipotecario</a></li> 
+              </ul>
+            </li>
+            <li class="barra"><a href="sucursales.html">Sucursales</a></li> 
+            <li class="barra"><a href="cluster.html">Clustering</a></li>           
+          </ul>       
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<body>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12 col-md-12 main">
+          
+          <h1 class="page-header">Bancos Privados</h1>
+
+          <div class="container col-sm-12 col-md-12 col-lg-12">
+              
+              <p class="text-justify">A continuación se exponen datos comparativos de los principales Bancos Privados del sistema financiero argentino.</p>
+              <br>
+              
+              <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                <ul id="myTab" class="nav nav-tabs" role="tablist">
+
+                  <li role="presentation" class="active asd">
+                    <a href="#cartera" role="tab" id="cartera-tab" data-toggle="tab" aria-controls="cartera">Financiaciones</a>
+                  </li>
+
+                  <li role="presentation">
+                    <a href="#ratios" id="ratios-tab" role="tab" data-toggle="tab" aria-controls="ratios" aria-expanded="true">Ratios</a>
+                  </li>
+                  
+                </ul>
+              
+              
+                <div id="myTabContent" class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade in active" id="cartera" aria-labelledBy="cartera-tab">
+                      <p>
+                        <br>
+                        <h3>Total de financiaciones</h3>
+                        <br>                      
+                        <p>Se puede observar la evolución de la cartera de los Bancos en los últimos cinco años:</p>
+                        <br>
+                        <div id="carteratotal" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                        
+                      </p>
+                  </div>
+
+
+                  <div role="tabpanel" class="tab-pane fade" id="ratios" aria-labelledBy="ratios-tab">
+                      <div class="table-responsive">
+                        <br>
+                        <table id="table-sparkline" class="table table-bordered table-hover table-condensed">
+                            <tr class="warning">
+                                <th class="titulo">Banco</th>
+                                <th class="titulo">Calidad (Dic-14)</th>
+                                <th class="titulo">Evol. Calidad</th>
+                                <th class="titulo">Cobertura (Dic-14)</th>
+                                <th class="titulo">Evol. Cobertura</th>
+                                <th class="titulo">Cob Neta (Dic-14)</th>
+                                <th class="titulo">Evol. Cob Neta</th>
+                            </tr>
+                            <tr>
+                                <th>Galicia</th>
+                                <td>1.6 %</td>
+                                <td data-sparkline="2.1, 1.5, 1.6, 1.7, 1.6"/>
+                                <td>143.9 %</td>
+                                <td data-sparkline="153.8, 191.7, 148.9, 126.3, 143.9"/>
+                                <td>0.7 %</td>
+                                <td data-sparkline="1.2, 1.4, 0.8, 0.4, 0.7"/>
+                            </tr>
+                            <tr>
+                                <th>BBVA</th>
+                                <td>0.9 %</td>
+                                <td data-sparkline="0.5, 0.4, 0.6, 0.8, 0.9"/>
+                                <td>247.0 %</td>
+                                <td data-sparkline="552.5, 485.5, 315.6, 239.9, 247.0"/>
+                                <td>1.3 %</td>
+                                <td data-sparkline="2.1, 1.6, 1.3, 1.1, 1.3"/>
+                            </tr>
+                            <tr>
+                                <th>Santander</th>
+                                <td>1.3 %</td>
+                                <td data-sparkline="1.3, 0.6, 1.1, 1.1, 1.3"/>
+                                <td>160.3 %</td>
+                                <td data-sparkline="149.3, 238.8, 149.6, 152.6, 160.3"/>
+                                <td>0.8 %</td>
+                                <td data-sparkline="0.6, 0.9, 0.6, 0.6, 0.8"/>
+                            </tr>
+                            <tr>
+                                <th>Macro</th>
+                                <td>2.1 %</td>
+                                <td data-sparkline="2.0, 1.5, 1.9, 1.8, 2.1"/>
+                                <td>128.6 %</td>
+                                <td data-sparkline="150.7, 162.4, 153.2, 144.8, 128.6"/>
+                                <td>0.6 %</td>
+                                <td data-sparkline="1.1, 1.0, 1.0, 0.8, 0.6"/>
+                            </tr>
+                            <tr>
+                                <th>ICBC</th>
+                                <td>1.5 %</td>
+                                <td data-sparkline="2.5, 1.5, 2.1, 1.6, 1.5"/>
+                                <td>152.0 %</td>
+                                <td data-sparkline="124.2, 157.3, 125.7, 135.5, 152.0"/>
+                                <td>0.8 %</td>
+                                <td data-sparkline="0.6, 0.8, 0.6, 0.6, 0.8"/>
+                            </tr>
+                            <tr>
+                                <th>HSBC</th>
+                                <td>2.0 %</td>
+                                <td data-sparkline="1.5, 1.5, 2.1, 2.1, 2.0"/>
+                                <td>109.7 %</td>
+                                <td data-sparkline="121.5, 121.7, 94.7, 97.5, 109.7"/>
+                                <td>0.2 %</td>
+                                <td data-sparkline="0.3, 0.3, -0.1, -0.1, 0.2"/>
+                            </tr>
+                            <tr>
+                                <th>Credicoop</th>
+                                <td>1.3 %</td>
+                                <td data-sparkline="1.2, 1.0, 1.3, 1.2, 1.3"/>
+                                <td>222.0 %</td>
+                                <td data-sparkline="277.5, 285.7, 223.3, 225.0, 222.0"/>
+                                <td>1.6 %</td>
+                                <td data-sparkline="2.2, 1.9, 1.6, 1.6, 1.6"/>
+                            </tr>
+                            <tr>
+                                <th>Patagonia</th>
+                                <td>1.8 %</td>
+                                <td data-sparkline="1.3, 0.8, 1.2, 1.6, 1.8"/>
+                                <td>238.9 %</td>
+                                <td data-sparkline="168.8, 244.6, 246.0, 278.2, 238.9"/>
+                                <td>2.6 %</td>
+                                <td data-sparkline="0.9, 1.2, 1.8, 2.9, 2.6"/>
+                            </tr>
+                            <tr>
+                                <th>Citibank</th>
+                                <td>1.0 %</td>
+                                <td data-sparkline="1.6, 0.9, 1.1, 0.9, 1.0"/>
+                                <td>161.1 %</td>
+                                <td data-sparkline="121.0, 181.2, 148.5, 173.1, 161.1"/>
+                                <td>0.6 %</td>
+                                <td data-sparkline="0.3, 0.7, 0.5, 0.6, 0.6"/>
+                            </tr>
+                            <tr>
+                                <th>Itaú</th>
+                                <td>3.1 %</td>
+                                <td data-sparkline="1.0, 0.8, 1.3, 1.5, 3.1"/>
+                                <td>113.3 %</td>
+                                <td data-sparkline="225.6, 233.7, 166.3, 158.4, 113.3"/>
+                                <td>0.4 %</td>
+                                <td data-sparkline="1.3, 1.1, 0.9, 0.9, 0.4"/>
+                            </tr>
+                        </table>                     
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+    
+    <script class="text/javascript" src="js/privados/carteratotal.js"></script>
+    <script class="text/javascript" src="js/privados/ratios.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
