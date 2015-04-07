@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Macro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  </head>
+
+
+<header>
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-1">
+          <ul class="nav navbar-nav">
+            <li class="barra"><a href="index.html">Inicio</a></li>
+            <li class="barra"><a href="privados.html">Bancos Privados</a></li>
+            <li class="barra"><a href="publicos.html">Bancos Públicos</a></li>
+            
+            <li class="dropdown barra"> 
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                 Por Banco <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="galicia.html">Galicia</a></li>
+                <li><a href="bbva.html">BBVA</a></li>
+                <li><a href="santander.html">Santander</a></li>
+                <li><a href="macro.html">Macro</a></li>
+                <li><a href="icbc.html">ICBC</a></li>
+                <li><a href="hsbc.html">HSBC</a></li>
+                <li><a href="credicoop.html">Credicoop</a></li>
+                <li><a href="patagonia.html">Patagonia</a></li>
+                <li><a href="citibank.html">Citibank</a></li>
+                <li><a href="itau.html">Itaú</a></li>
+                <li class="divider"></li>
+                <li><a href="ciudad.html">Ciudad</a></li>
+                <li><a href="provincia.html">Provincia</a></li>
+                <li><a href="nacion.html">Nación</a></li>
+                <li><a href="hipotecario.html">Hipotecario</a></li> 
+              </ul>
+            </li>
+            <li class="barra"><a href="sucursales.html">Sucursales</a></li>
+            <li class="barra"><a href="cluster.html">Clustering</a></li>            
+          </ul>       
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="bancos.html">Bancos <span class="sr-only">(current)</span></a></li>
+            <li ><a href="galicia.html">Galicia</a></li>
+            <li><a href="bbva.html">BBVA</a></li>
+            <li><a href="santander.html">Santander</a></li>
+            <li class="active"><a href="macro.html">Macro</a></li>
+            <li><a href="icbc.html">ICBC</a></li>
+            <li><a href="hsbc.html">HSBC</a></li>
+            <li><a href="credicoop.html">Credicoop</a></li>
+            <li><a href="patagonia.html">Patagonia</a></li>
+            <li><a href="citibank.html">Citibank</a></li>
+            <li><a href="itau.html">Itaú</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="ciudad.html">Ciudad</a></li>
+            <li><a href="provincia.html">Provincia</a></li>
+            <li><a href="nacion.html">Nación</a></li>
+            <li><a href="hipotecario.html">Hipotecario</a></li>            
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          
+          <h1 class="page-header">Banco Macro</h1>
+
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="imagenes/macro.jpg" class="img-responsive " alt="Banco Macro">
+              <h5><a href="https://www.macro.com.ar">Sitio web del Banco Macro</a></h5>
+            </div>
+          </div>
+
+          <div class="container col-sm-10 col-md-10 col-lg-10">
+              
+              <p><em>La última información publicada por el BCRA corresponde a <strong>Dic-14</strong>.</em></p>
+              
+              <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                <ul id="myTab" class="nav nav-tabs" role="tablist">
+                  
+                  <li role="presentation" class="active asd">
+                    <a href="#financiaciones" id="financiaciones-tab" role="tab" data-toggle="tab" aria-controls="financiaciones" aria-expanded="true">Financiaciones</a>
+                  </li>
+                  
+                  <li role="presentation">
+                    <a href="#carterairreg" role="tab" id="carterairreg-tab" data-toggle="tab" aria-controls="carterairreg">Cartera Irregular</a>
+                  </li>
+
+                  <li role="presentation">
+                    <a href="#prevycargo" role="tab" id="prevycargo-tab" data-toggle="tab" aria-controls="prevycargo">Previsiones y Cargo</a>
+                  </li>                  
+
+                  <li role="presentation">
+                    <a href="#ratios" role="tab" id="ratios-tab" data-toggle="tab" aria-controls="ratios">Ratios</a>
+                  </li>
+                </ul>
+              
+              
+                <div id="myTabContent" class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade in active" id="financiaciones" aria-labelledBy="financiaciones-tab">
+                    <br>
+                    <h3>Total de Financiaciones</h3>
+                    <br>
+                    <p>A continuación se expone una evolución de la composición de la cartera:</p>
+                    <br><br>
+                    <div id="financ1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                    <br><br>
+                    <p>Evolución de la cartera del sector privado:</p>
+                    <br><br>
+                    <div id="financ2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                  </div>
+
+                  <div role="tabpanel" class="tab-pane fade" id="carterairreg" aria-labelledBy="carterairreg-tab">
+                    <br>
+                    <h3>Cartera Irregular</h3>
+                    <br>
+                    <p>La cartera irregular está integrada por la sumatoria de las financiaciones de los clientes que poseen en la entidad una clasificación mayor o igual a 3.</p>
+                    <br><br>
+                    <div class="container">
+                      <div id="carterairregular1" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+                      <div id="carterairregular2" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+                    </div>
+                    <br><br>                    
+                  </div>
+
+                  <div role="tabpanel" class="tab-pane fade" id="prevycargo" aria-labelledBy="prevycargo-tab">
+                    <br>
+                    <h3>Previsiones y Cargo</h3>
+                    <br>                  
+                    <p>Evolución de previsiones y del cargo por incobrabilidad:</p>
+                    <br><br>
+                    <div id="previsionesycargo" style="min-width: 600px; height: 400px; margin: 0 auto"></div>
+                    <br><br>
+                  </div>
+
+                  <div role="tabpanel" class="tab-pane fade" id="ratios" aria-labelledBy="ratios-tab">
+                    <br>
+                    <h3>Calidad</h3>
+                    <br>                      
+                    <p>Este indicador surge de la división entre la Cartera Irregular y el Total de Financiaciones de la entidad.</p>
+                    <br><br>
+                    <div id="calidad" style="min-width: 250px; height: 250px; margin: 0 auto"></div>
+                    <br><br>
+                    <h3>Cobertura</h3>
+                    <br>                    
+                    <p>Surge de la división entre el Total de Previsiones y la Cartera Irregular de la entidad.</p>
+                    <br><br>
+                    <div id="cobertura" style="min-width: 250px; height: 250px; margin: 0 auto"></div>
+                    <br><br>
+                    <h3>Cobertura Neta</h3>
+                    <br>
+                    <p>Corresponde a (Total de Previsiones - Cartera Irregular) / (Total de Financiaciones - Cartera Irregular).</p>
+                    <br><br>
+                    <div id="coberturaneta" style="min-width: 250px; height: 250px; margin: 0 auto"></div>
+                    <br><br>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/highcharts-more.js"></script>
+  <script src="http://code.highcharts.com/modules/exporting.js"></script> 
+  
+  <script class="text/javascript" src="js/macro/financiaciones1.js"></script>
+  <script class="text/javascript" src="js/macro/financiaciones2.js"></script>
+  <script class="text/javascript" src="js/macro/carterairregular1.js"></script>
+  <script class="text/javascript" src="js/macro/carterairregular2.js"></script>
+  <script class="text/javascript" src="js/macro/previsionesycargo.js"></script>
+  <script class="text/javascript" src="js/macro/calidad.js"></script>
+  <script class="text/javascript" src="js/macro/cobertura.js"></script>
+  <script class="text/javascript" src="js/macro/coberturaneta.js"></script>
+
+
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
