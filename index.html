@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<title>Benchmarking</title>
+ 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+ 	<link rel="stylesheet" href="css/estilos.css">
+ 	<link rel="stylesheet" href="css/bootstrap.min.css">
+ </head>	
+
+<header>
+	<div class="container">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+						<span class="sr-only">Menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar-1">
+					<ul class="nav navbar-nav">
+						<li class="barra"><a href="index.html">Inicio</a></li>
+						<li class="barra"><a href="privados.html">Bancos Privados</a></li>
+						<li class="barra"><a href="publicos.html">Bancos Públicos</a></li>
+						
+						<li class="dropdown barra">	
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								 Por Banco <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+					            <li><a href="galicia.html">Galicia</a></li>
+					            <li><a href="bbva.html">BBVA</a></li>
+					            <li><a href="santander.html">Santander</a></li>
+					            <li><a href="macro.html">Macro</a></li>
+					            <li><a href="icbc.html">ICBC</a></li>
+					            <li><a href="hsbc.html">HSBC</a></li>
+					            <li><a href="credicoop.html">Credicoop</a></li>
+					            <li><a href="patagonia.html">Patagonia</a></li>
+					            <li><a href="citibank.html">Citibank</a></li>
+					            <li><a href="itau.html">Itaú</a></li>
+								<li class="divider"></li>
+				                <li><a href="ciudad.html">Ciudad</a></li>
+				                <li><a href="provincia.html">Provincia</a></li>
+				                <li><a href="nacion.html">Nación</a></li>
+					            <li><a href="hipotecario.html">Hipotecario</a></li>   
+							</ul>
+						</li>
+						<li class="barra"><a href="sucursales.html">Sucursales</a></li>						
+						<li class="barra"><a href="cluster.html">Clustering</a></li>
+					</ul>				
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+
+		
+<body>
+	<div class="container">
+		<section class="main row">
+			<article class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-justify">
+				<p>
+					<div>
+	      				<img src="imagenes/benchmarking.png" class="img-responsive" alt="...">
+	      			</div>		
+					<br>
+					 <p>En este sitio encontrará información sobre los principales Bancos del Sistema Financiero Argentino, de una manera visual y gráfica.</p><p> Podrá acceder al detalle individual por entidad así como también a comparaciones entre los principales Bancos Públicos y Privados.</p>
+				</p>
+			</article>
+
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<br><br>
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel"data-interval="4000">
+			  		<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+
+			  		<!-- Wrapper for slides -->
+			  		<div class="carousel-inner" role="listbox">
+			    		<div class="item active">
+			      			<div>
+			      				<img src="imagenes/analisis1.jpg" class="img-responsive" alt="...">
+			      			</div>
+			      			<div class="carousel-caption">
+			      				<span class="glyphicon glyphicon-signal"></span>
+			      				<input type="button" value="Análisis individual por Banco" onClick="location.href='bancos.html' ">
+			      			</div>
+			    		</div>
+
+			    		<div class="item">
+			    			<div>
+			    				<img src="imagenes/analisis5.jpg" class="img-responsive" alt="...">
+			    			</div>
+			      			<div class="carousel-caption">
+			     				<span class="glyphicon glyphicon-list-alt"></span>
+			      				<input type="button" value="Análisis de Bancos Públicos" onClick="location.href='publicos.html' ">
+			    			</div>
+			  			</div>
+
+			    		<div class="item">
+			      			<div>
+			      				<img src="imagenes/analisis6.jpg" class="img-responsive" alt="...">
+			      			</div>
+			      			<div class="carousel-caption">
+			      				<span class="glyphicon glyphicon-list-alt"></span>
+			      				<input type="button" value="Análisis de Bancos Privados" onClick="location.href='privados.html' ">
+			      			</div>
+			    		</div>			  			
+
+			  			<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<br>
+		<br>
+	</div>
+
+	<div class="container">
+			<div class="row">
+				<div class="color1 col-xs-12 col-sm-6 col-md-3 text-justify">
+					<p><br>
+						<h4><span class="glyphicon glyphicon-globe"></span> Sucursales</h4>
+						Visualice el posicionamiento de los principales bancos en función de la cantidad de <strong><a href="sucursales.html" class="color4">Sucursales</a></strong> en la ciudad de Buenos Aires.
+						<br><br>
+					</p><br>
+				</div>
+
+				<div class="color2 col-xs-12 col-sm-6 col-md-3 text-justify">
+					<p><br>
+						<h6><span class="glyphicon glyphicon-file"></span> Clustering</h6>
+						Acceda a un <strong><a href="cluster.html" class="color3">Análisis de Grupos </a></strong> sobre las principales entidades del sistema bancario nacional.<br><br><br>
+					</p><br>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="color1 col-xs-12 col-sm-6 col-md-3 text-justify">
+					<p><br>
+						<h4><span class="glyphicon glyphicon-asterisk"></span> Fuente BCRA</h4>
+						Los datos expuestos fueron extraídos de los balances presentados por las entidades y publicados por el <strong><a href="http://www.bcra.gov.ar/" class="color4">B.C.R.A.</a></strong> (Banco Central de la República Argentina) en su sitio. <br><br>
+					</p>
+				</div>
+
+				<div class="color2 col-xs-12 col-sm-6 col-md-3 text-justify">
+					<p><br>
+						<h6><span class="glyphicon glyphicon-book"></span> Normativa</h6>
+						Análisis originado a partir de dos normativas del Banco Central: Com. “A” 5637 <a href="http://www.bcra.gov.ar/pdfs/texord/t-cladeu.pdf" class="color3"><strong>"Clasificación de Deudores"</strong></a> y Com. “A” 5398 <a href="http://www.bcra.gov.ar/pdfs/texord/t-prevmi.pdf" class="color3"><strong>"Previsiones Mínimas por Riesgo de Incobrabilidad"</strong></a> . <br><br>
+					</p>
+				</div>
+			</div>
+	</div>
+
+
+	<br><br>
+
+	<footer>
+		<div class="container">
+			<h5>Lucas Giordano - ITBA</h5>
+		</div>
+	</footer>
+
+	<br>		
+
+	<!-- <script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script> 
+	
+	<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	<script class="text/javascript" src="js/graficos.js"></script>-->
+ 	
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.js"></script>
+</body>
+</html>
