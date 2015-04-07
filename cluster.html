@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Clustering</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  </head>
+
+
+<header>
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-1">
+          <ul class="nav navbar-nav">
+            <li class="barra"><a href="index.html">Inicio</a></li>
+            <li class="barra"><a href="privados.html">Bancos Privados</a></li>
+            <li class="barra"><a href="publicos.html">Bancos Públicos</a></li>
+            
+            <li class="dropdown barra"> 
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                 Por Banco <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="galicia.html">Galicia</a></li>
+                <li><a href="bbva.html">BBVA</a></li>
+                <li><a href="santander.html">Santander</a></li>
+                <li><a href="macro.html">Macro</a></li>
+                <li><a href="icbc.html">ICBC</a></li>
+                <li><a href="hsbc.html">HSBC</a></li>
+                <li><a href="credicoop.html">Credicoop</a></li>
+                <li><a href="patagonia.html">Patagonia</a></li>
+                <li><a href="citibank.html">Citibank</a></li>
+                <li><a href="itau.html">Itaú</a></li>
+                <li class="divider"></li>
+                <li><a href="ciudad.html">Ciudad</a></li>
+                <li><a href="provincia.html">Provincia</a></li>
+                <li><a href="nacion.html">Nación</a></li>
+                <li><a href="hipotecario.html">Hipotecario</a></li> 
+              </ul>
+            </li>
+            <li class="barra"><a href="sucursales.html">Sucursales</a></li> 
+            <li class="barra"><a href="cluster.html">Clustering</a></li>           
+          </ul>       
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<body>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12 col-md-12 main">
+          
+          <h1 class="page-header">Clustering</h1>
+
+          <div class="container col-sm-12 col-md-12 col-lg-12">
+              
+              <br>
+              
+              <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                <ul id="myTab" class="nav nav-tabs" role="tablist">
+
+                  <li role="presentation" class="active asd">
+                    <a href="#analisis" id="analisis-tab" role="tab" data-toggle="tab" aria-controls="analisis" aria-expanded="true">Análisis Previo</a>
+                  </li>
+
+                  <li role="presentation">
+                    <a href="#sas" id="sas-tab" role="tab" data-toggle="tab" aria-controls="sas" aria-expanded="true">Resultados: SAS Enterprise Miner</a>
+                  </li>
+                  
+                  <li role="presentation">
+                    <a href="#tanagra" role="tab" id="tanagra-tab" data-toggle="tab" aria-controls="tanagra">Resultados: TANAGRA</a>
+                  </li>
+                </ul>
+              
+              
+                <div id="myTabContent" class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade in active" id="analisis" aria-labelledBy="analisis-tab">
+                    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-justify">                    
+                      <p>
+                        <br>
+                        <h3>Introducción</h3>
+                        <p class="text-justify">Uno de los métodos de la <strong>“Minería de Datos”</strong> (Data Mining) es el <strong>“Análisis de Grupos”</strong> (Cluster Analysis).</p>
+                        <p class="text-justify">Se trata de un conjunto de técnicas multivariantes que se emplean para clasificar a un conjunto de elementos en grupos homogéneos. </p>
+                        <p class="text-justify">Dado un <strong>conjunto de individuos</strong> caracterizados por la información de <strong>n variables</strong>, se plantea el desafío de clasificarlos de manera tal que los miembros pertenecientes a un grupo o cluster sean tan similares entre sí como sea posible, y que a su vez los grupos sean bien distintos entre ellos.</p>
+                        
+                        <br>
+                        <h3>Análisis de Grupos</h3>
+                        <p class="text-justify"> Se han aplicado diversos métodos con el objetivo de clasificar a los siguientes <strong>14 Bancos:</strong></p>
+
+                        <div class="table-responsive col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <table id="table-sparkline" class="table table-bordered table-hover table-condensed">
+                                <tr>
+                                    <th>Galicia</th>
+                                    <th>Patagonia</th>
+                                </tr>
+                                <tr>
+                                    <th>BBVA</th>
+                                    <th>Citibank</th>
+                                </tr>
+                                <tr>
+                                    <th>Santander</th>
+                                    <th>Itaú</th>
+                                </tr>
+                                <tr>
+                                    <th>Macro</th>
+                                    <th>Ciudad</th>
+                                </tr>
+                                <tr>
+                                    <th>ICBC</th>
+                                    <th>Provincia</th>
+                                </tr>
+                                <tr>
+                                    <th>HSBC</th>
+                                    <th>Nación</th>
+                                </tr>
+                                <tr>
+                                    <th>Credicoop</th>
+                                    <th>Hipotecario</th>
+                                </tr>                                                                          
+                            </table>
+                            <br>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <p class="text-justify">Para el análisis se utilizaron <strong>32 variables:</strong></p>
+                        </div>
+                        
+                        <div class="table-responsive col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <table id="table-sparkline" class="table table-bordered table-hover table-condensed">
+                                <tr>
+                                    <th>Cartera Total</th>
+                                    <th>Cartera Comercial Total</th>
+                                </tr>
+                                <tr>
+                                    <th>Cartera Sector Público No Financiero</th>
+                                    <th>Cartera Consumo Sit 1 Normal</th>
+                                </tr>
+                                <tr>
+                                    <th>Cartera Sector Financiero</th>
+                                    <th>Cartera Consumo Sit 2 Seguimiento Especial</th>
+                                </tr>
+                                <tr>
+                                    <th>Cartera Comercial</th>
+                                    <th>Cartera Consumo Sit 3 Con Problemas</th>
+                                </tr>
+                                <tr>
+                                    <th>Cartera Consumo o Vivienda</th>
+                                    <th>Cartera Consumo Sit 4 Con Alto Riesgo de Insolvencia</th>
+                                </tr>
+                                <tr>
+                                    <th>Cartera Comercial Asimilable a Consumo</th>
+                                    <th>Cartera Consumo Sit 5 Irrecuperable</th>
+                                </tr>
+                                <tr>
+                                    <th>Previsiones por Riesgo de Incobrabilidad</th>
+                                    <th>Cartera Consumo Sit 6 Irrecuperable por Disposición Técnica</th>
+                                </tr>
+                                <tr>
+                                    <th>Cargo por Incobrabilidad Mensual</th>
+                                    <th>Cartera Consumo Total</th>
+                                </tr>
+                                <tr>
+                                    <th>Recuperos de Créditos Mensual</th>
+                                    <th>Cartera Irregular Comercial</th>
+                                </tr>
+                                <tr>
+                                    <th>Créditos Irrecuperables Cuentas de Orden</th>
+                                    <th>Cartera Irregular Consumo</th>
+                                </tr>
+                                <tr>
+                                    <th>Cartera Comercial Sit 1 Normal</th>
+                                    <th>Cartera Irregular Total</th>
+                                </tr>
+                                <tr>
+                                    <th>Cartera Comercial Sit 2 Seguimiento Especial</th>
+                                    <th>Calidad Comercial</th>
+                                </tr>
+                                <tr>
+                                    <th>Cartera Comercial Sit 3 Con Problemas</th>
+                                    <th>Calidad Consumo</th>
+                                </tr>
+                                <tr>
+                                    <th>Cartera Comercial Sit 4 Con Alto Riesgo de Insolvencia</th>
+                                    <th>Calidad Total</th>
+                                </tr>
+                                <tr>
+                                    <th>Cartera Comercial Sit 5 Irrecuperable</th>
+                                    <th>Cobertura Total</th>
+                                </tr>
+                                <tr>
+                                    <th>Cartera Comercial Sit 6 Irrecuperable por Disposición Técnica</th>
+                                    <th>Cobertura Neta</th>
+                                </tr>                                                                             
+                            </table>
+                         </div>
+
+                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                           <p class="text-justify">Las herramientas empleadas fueron:</p> 
+                            <ul>
+                              <li>SAS Enterprise Miner (versión 13.2).</li>
+                              <li>TANAGRA (versión 1.4.25).</li>
+                            </ul>
+                            <br>
+                          <p class="text-justify">En las restantes pestañas pueden observarse los resultados obtenidos.</p>
+                          <br>
+                        </div>
+                    </article>
+                  </div>
+
+                  <div role="tabpanel" class="tab-pane fade" id="sas" aria-labelledBy="sas-tab">
+                    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-justify">
+                      <p>
+                        <br>
+                        <h3>Análisis de Bancos Públicos y Privados</h3>
+                        <br>                    
+                        <p>Se aplicaron distintos algoritmos de cluster:</p>
+                        <ol>
+                          <li> Método Ward con un máximo de 3 nodos.</li>
+                          <li> Método Promedio con un máximo de 3 nodos.</li>
+                          <li> Método Ward con un máximo de 4 nodos.</li>
+                        </ol>
+                      </p>
+                      <br>
+                    </article>
+
+                    <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-justify">
+                      <p><strong>En los casos 1 y 2 se obtuvieron los siguientes grupos: </strong></p>
+                      <ul>
+                        <li> El Banco Nación tiene un comportamiento diferente a todos los demás.</li>
+                        <li> Los Bancos Privados BBVA, Galicia, Macro y Santander constituyen otro grupo junto con el Banco Público de la Provincia de Bs As.</li>
+                        <li> Finalmente el tercer grupo lo forman los Bancos Privados Citibank, Credicoop, HSBC, ICBC, Itaú y Patagonia en conjunto con los Bancos Públicos Ciudad e Hipotecario.</li>
+                    </ul>
+                      <br>
+                    </article>
+
+                    <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-justify">
+                      <p><strong>En el caso 3 los resultados fueron: </strong></p>
+                      <ul>
+                        <li> El Banco Nación sigue formando un grupo en sí mismo al presentar un comportamiento diferente a los demás. </li>
+                        <li> Galicia, Macro Santander y Provincia por un lado, y Citibank, HSBC, ICBC, Itaú, Ciudad e Hipotecario por el otro, siguieron formando dos grupos separados. </li>
+                        <li> Pero Surge un cuarto grupo integrado por tres Bancos Privados: BBVA, Credicoop y Patagonia. </li>
+                      </ul>
+                      <br><br>
+                    </article>
+
+                    <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-justify">
+                      <div>
+                        <img src="imagenes/clustering_grafico_torta_2.jpg" class="img-responsive" alt="..." style="border:1px solid black">
+                      </div>
+                      <br><br>
+                    </article>
+
+                    <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-justify">
+                      <div>
+                        <img src="imagenes/clustering_grafico_torta.jpg" class="img-responsive" alt="..." style="border:1px solid black">
+                      </div>
+                      <br><br>
+                    </article>
+
+                    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-justify">
+                    <h3>Análisis de Bancos Privados</h3>
+                    <br>
+                      <p><strong>Se realizó un análisis exclusivo para los Bancos Privados, obteniéndose 4 grupos</strong></p>
+                       <ul>
+                        <li> El primero formado por Galicia y Santander. </li>
+                        <li> El segundo por BBVA y Patagonia. </li>
+                        <li> El tercero por Citibank, Credicoop, HSBC, ICBC e Itaú. </li>
+                        <li> El último por el Macro. </li>
+                       </ul>
+                       <br>
+                    </article>                    
+   
+                    <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-justify">
+                      <div>
+                        <img src="imagenes/clustering_grafico_torta_privados.jpg" class="img-responsive" alt="..." style="border:1px solid black">
+                      </div>
+                      <br><br>
+                    </article>
+
+                  </div>
+
+
+                  <div role="tabpanel" class="tab-pane fade" id="tanagra" aria-labelledBy="tanagra-tab">
+                    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-justify">                    
+                      <p>
+                        <br>
+                        <h3>Análisis de Bancos Públicos y Privados</h3>
+                        <br>                      
+                        <p>Se implementó un algoritmo de clustering de dos pasos (Lo que se conoce como “Hybrid Clustering”). </p>
+                        <ul>
+                          <li> En primer lugar se corrió un clustering K-Means. </li>
+                          <li> En segundo lugar un clustering Jerárquico (HCA – Hierarchical Cluster Analysis). </li>
+                        </ul>
+                        <p>Los resultados a los que se arribó se expresan en el siguiente Dendrograma:</p>
+                        <br>
+      
+                        <div>
+                          <img src="imagenes/dendrograma_tanagra_Kmeans_HCA.jpg" class="img-responsive" alt="..." style="border:1px solid black">
+                        </div>
+                        <br>
+                        <ul>
+                          <li>Se puede observar que el Banco Nación sigue constituyendo un grupo en sí mismo, diferenciándose del resto de las entidades. </li>
+                          <li>Galicia, Macro, Santander y Provincia forman otro cluster (Como en los análisis realizados con SAS). </li>
+                          <li>Citibank, Credicoop, HSBC, ICBC, Itaú, Ciudad e Hipotecario, junto con los bancos Patagonia y BBVA constituyen un tercer grupo. </li>
+                        </ul>
+                      </p>
+                    </article>
+                  </div>
+                </div>
+
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
